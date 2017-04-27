@@ -1,2 +1,6 @@
 %h1= @doc.title
 %p= @doc.context
+
+= link_to "All Docs", docs_path
+= link_to "Fix Docs", edit_doc_path(@doc)
+= link_to "Delete Docs", doc_path(@doc), mehtod: :delete, data: { confirm: "Are you sure?"}
